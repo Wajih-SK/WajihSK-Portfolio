@@ -1,0 +1,15 @@
+.image-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.para {
+    width: 50%;
+}
+.myimage {
+    width: 30%;
+    height: auto;
+    margin-left: 2rem;
+  }
+
