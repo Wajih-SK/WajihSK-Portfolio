@@ -2,26 +2,58 @@ import React from 'react';
 import sangeet from '../assets/images/155285315.png';
 import engding from '../assets/images/Screenshot 2024-04-28 232233.png';
 import tototimer from '../assets/images/therahapi_logo.jpg';
+import tik from '../assets/images/tik.png';
+import watan from '../assets/images//watan.png';
+import rsf from '../assets/images/RSFLOGO.png';
+import triangle from '../assets/images/triangle.png';
+import envlop from '../assets/images/Envlop.png';
 
 const Projects = () => {
   const works = [
     {
       title: 'TalkHappi',
-      description: 'AI-based web app that provides virtual counseling by providing feedback and score-based incentives for the people lacking access to proper resources. Successfully pitched TalkhAPPi in The Diamond Challenge 2023, The Paradigm Challenge, and the South by Southwest (SXSW) Startup Competition.  [React, Tailwind CSS]',
+      description: 'TalkhAPPi is an AI-driven web app designed to revolutionize access to mental health support by providing virtual counseling, personalized feedback, and score-based incentives. Leveraging advanced AI models, TalkhAPPi ensures individuals lacking proper resources can receive meaningful assistance. Successfully pitched at The Diamond Challenge 2023, The Paradigm Challenge, and SXSW Startup Competition, TalkhAPPi showcases the power of AI in transforming mental health accessibility.',
       code: 'https://github.com/SimerusM/Talkhappi',
       live: 'https://talkhappi.ca/',
       youtube: 'false',
-      stack: 'React, Tailwind CSS',
+      stack: 'Next.js, Tailwind CSS, Express, Mongoose, JsonWebToken, Bycrpt',
       thumbnail: tototimer,
     },
     {
+      title: 'Envlop',
+      description: 'Envlop AI is an intelligent email management system that utilizes Python, the Gmail API, and OpenAI\'s API to revolutionize the way you handle your inbox. Say goodbye to sifting through dozens or even hundreds of emails. With Envelope AI, your emails are automatically categorized, prioritized, and summarized, ensuring you never miss anything important. The system also goes a step further by learning from your email habits to help generate more efficient and personalized email responses.',
+      code: 'https://github.com/Envlop-AI',
+      live: 'false',
+      youtube: 'false',
+      stack: 'FastAPI, SQLAlchemy, React, BootStrap, Stripe, OpenAI, Authlib',
+      thumbnail: envlop,
+    },
+    {
       title: 'Calendarium',
-      description: 'Web app which seamlessly synchronizes calendars across multiple accounts. It implemented OAuth to securely access users’ calendar information, ensuring robust data protection',
+      description: 'Calendarium Cloud is a SaaS platform that redefines calendar management by seamlessly synchronizing data across Google Calendar, Outlook Calendar, and iCloud Calendar. Designed for instant and reliable synchronization, it ensures all your calendars are always up-to-date. With Calendarium Cloud, enjoy a streamlined and enhanced experience across all your favorite platforms.',
       code: 'https://github.com/Calendarium-Cloud',
       live: 'false',
       youtube: 'false',
-      stack: 'HTMl, CSS, JavaScript',
+      stack: 'Python, Flask, MySQL, React, Azure, Azure DevOps, Swagger',
       thumbnail: sangeet,
+    },
+    {
+      title: 'TriangleNet',
+      description: 'Developed a Python library providing a simple yet robust framework for building neural networks, implementing core functionalities like gradient descent, forward and backward propagation, and ReLU activation. Included dynamic learning rate adjustment and visualization tools for tracking training progress and debugging',
+      code: '',
+      live: 'false',
+      youtube: 'false',
+      stack: 'Python, Numpy, Pandas, Matplotlib, MNIST Digit Recognizer',
+      thumbnail: triangle,
+    },
+    {
+      title: 'Student-of-Watan',
+      description: 'Watan is a modified version of Catan, built with a modular design using patterns like Observer, Strategy, and Factory for player interactions, board setup, and game phases. Smart pointers ensure efficient memory management with no leaks, while the architecture focuses on scalability and maintainability for flexible gameplay.',
+      code: 'https://github.com/Wajih-SK/students-of-watan',
+      live: 'false',
+      youtube: 'false',
+      stack: 'C++',
+      thumbnail: watan,
     },
     {
       title: 'ActionOnRadon',
@@ -32,7 +64,24 @@ const Projects = () => {
       stack: 'HTML, Bootstrap 5',
       thumbnail: engding,
     },
-    
+    {
+      title: 'Tic-Tac-Toe-AI',
+      description: 'Web app which seamlessly synchronizes calendars across multiple accounts. It implemented OAuth to securely access users’ calendar information, ensuring robust data protection',
+      code: 'https://github.com/Wajih-SK/AI-Tic-Tac-Toe',
+      live: 'false',
+      youtube: 'false',
+      stack: 'Python, Minimax Alg',
+      thumbnail: tik,
+    },
+    {
+      title: 'Rock Star Falcon Transportation Official Website',
+      description: 'Web app which seamlessly synchronizes calendars across multiple accounts. It implemented OAuth to securely access users’ calendar information, ensuring robust data protection',
+      code: 'https://github.com/Wajih-SK/RSF-App',
+      live: 'false',
+      youtube: 'false',
+      stack: 'React.js Tailwind CSS',
+      thumbnail: rsf,
+    },
   ];
   return (
     <div
@@ -57,7 +106,10 @@ const Projects = () => {
             <div className="flex flex-col items-start space-y-3">
               <h2 className="text-xl font-semibold">{work.title}</h2>
               <p>{work.description}</p>
+              <p>Stack: {work.stack}</p>
               <div className="flex flex-row items-center w-full">
+              
+
               {
                 work.live == 'false' ? <></> :
                 <a

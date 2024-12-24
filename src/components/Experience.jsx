@@ -2,6 +2,7 @@ import React from 'react';
 import sangeet from '../assets/images/Responisve Wesbite.jpg';
 import engding from '../assets/images/Screenshot 2024-04-28 233853.png';
 import tototimer from '../assets/images/Screenshot 2024-04-28 233924.png';
+import octant from '../assets/images/octant.png';
 
 const Experience = () => {
   const works = [
@@ -30,6 +31,16 @@ const Experience = () => {
 
 
       thumbnail: engding,
+    },
+
+    {
+      title: 'SEO Engineer & Full Stack Developer',
+      description: 'Conducted thorough data analysis using Google Business Tools to identify trends and improve user click-through rates.  Ensuring the website is crawlable and indexable by search engines, optimizing page speed, mobile usability, and fixing technical issues.',
+
+      live: 'https://www.octanteag.com/',
+
+
+      thumbnail: octant,
     },
     
   ];

@@ -8,13 +8,13 @@ const Skills = () => {
     },
     {
       category: 'Frameworks',
-      items: ['React JS', 'Next JS', 'Express JS', 'Open CV', 'Flask', 'Pygame', 'Numpy', 'MongoDB', 'Pandas', 'mySQL', 'OAuth','Bootstrap',
+      items: ['React JS', 'Next JS', 'Express JS', , 'Tailwind CSS', 'Open CV', 'Flask', 'Pygame', 'Numpy','FastAPI', 'Socket.io', 'MongoDB', 'Pandas', 'mySQL', 'Authlib', 'OAuth','Bootstrap',
       'GraphQL', 'LaTeX',],
     },
   
     {
       category: 'Other',
-      items: ['Git', 'Github', 'WordPress', 'Figma', 'Canva', 'GDB', 'Docker', 'Microsoft Office', 'CLI'],
+      items: ['Git', 'Github', 'WordPress', 'Figma', 'Canva', 'GDB', 'Docker', 'Microsoft Office', 'CLI', 'Unity', 'Azure DevOps', 'AWS EC2', 'Swagger'],
     },
     
   ];

@@ -13,9 +13,14 @@ const Hero = () => {
         
         <div className='image-div'>
         <p className="text-xl para">
-        I am a current Computer Science student, at the University of Waterloo, hard-working and ambitious. 
-        The co-founder of Talkhappi an AI-based web app that provides virtual counseling by providing feedback and score-based incentives.
-        In addition, I'm a Full-Stack Developer, Web & Graphics Designer, and a Tutor. 
+        I’m a Computer Science student at the University of Waterloo with a passion for creating impactful tech solutions. 
+        I co-founded Talkhappi, an AI-driven web app offering virtual counseling with personalized feedback and incentive-based support. 
+        As a Full-Stack Developer and Web Designer, I’ve built platforms like Calendarium Cloud for seamless calendar synchronization and websites for businesses
+         like Rock Star Falcon Transport and Future Stone. My skill set includes expertise in React, Node.js, Python (FastAPI, Flask), MongoDB, and cloud services
+          like Azure and AWS. Additionally, I have experience with AI/ML projects, such as developing a neural network from scratch. Beyond coding, I am also a Tutor 
+          and Graphics Designer. Let’s connect on GitHub, LinkedIn, and Instagram!
+
+
         <br /> Find me on{' '}
           <a
             href="https://github.com/Wajih-SK"
@@ -45,7 +50,17 @@ const Hero = () => {
           </a>{' '}
         
         </p>
-        <img className='myimage' src={myImage}/>
+        <img 
+            className="myimage" 
+            src={myImage} 
+            alt="Wajih" 
+            style={{
+              maxWidth: '100%',
+              height: 'auto',
+              objectFit: 'cover',
+              borderRadius: '10px', // Optional for rounded corners
+            }}
+          />
         
         </div>
         
